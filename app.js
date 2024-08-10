@@ -7,12 +7,12 @@ function anagramGc(words) {
 
     let anagram = {};
     
-    for (const ana of anas) {
-        const sortedWord = sortString(ana);
+    for (const word of words) {
+        const sortedWord = sortString(word);
         if (!anagram[sortedWord]) {
             anagram[sortedWord] = [];
         }
-        anagram[sortedWord].push(ana);
+        anagram[sortedWord].push(word);
     }
 
     
