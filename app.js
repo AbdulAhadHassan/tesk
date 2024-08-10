@@ -1,24 +1,25 @@
-let arr = ["bat","tap","cat","tab","pat"]
-let arr1 = []
 
-function anagram () {
-    
-    for(i =0;i<=arr.length;i++){
-        arr1.push(arr[i+1])
-        if((arr[i]).length === arr[i+1].length ){
-            // for(arr1[1].length==arr1[i]){
-                
-            if((arr1[i])[])
-            
+function anagramGc(words) {
 
-            
-        }
-        else{
-            arr1.pop(arr[i+1])
-        }
-        console.log(arr1)
+    function sortString(str) {
+        return str.split('').sort().join('');
     }
+
+    let anagram = {};
+    
+    for (const ana of anas) {
+        const sortedWord = sortString(ana);
+        if (!anagram[sortedWord]) {
+            anagram[sortedWord] = [];
+        }
+        anagram[sortedWord].push(ana);
+    }
+
+    
+    return Object.values(anagram);
 }
 
 
-anagram()
+let userinp = ["bat", "tap", "cat", "tab", "pat"];
+let result = anagramGc(userinp);
+console.log(result);
